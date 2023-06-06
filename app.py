@@ -104,7 +104,7 @@ def to_excel(file_names, emails):
 
 
 if __name__ == "__main__":
-    directory = 'C:/Users/Admin/Desktop/Synettic Data Generation/jobfier_cv/resumes/CV Iyun 2023'
+    directory = ''
     try:
         file_names = list_files(directory)
         print(file_names)
