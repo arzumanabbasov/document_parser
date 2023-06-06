@@ -98,13 +98,13 @@ def to_excel(file_names, emails):
                'main email': main_emails,
                'other emails': other_emails}
         cv_df = pd.DataFrame(cvv)
-        cv_df.to_excel('cvs-june.xlsx')
+        cv_df.to_excel('filename.xlsx')
     except Exception as e:
         logging.error(f"Error while saving to Excel file: {str(e)}")
 
 
 if __name__ == "__main__":
-    directory = ''
+    directory = '/direcory_of_pdf_files/'
     try:
         file_names = list_files(directory)
         print(file_names)
